@@ -1,0 +1,45 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJobs con NodeJS, Handlebars y MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "watch": "webpack --w --mode development",
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "start": "node ./index.js"
+  },
+  "author": "Roberto Filloy",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.2.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.17.1",
+    "express-validator": "^5.3.1",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.9.18",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.10",
+    "nodemailer-express-handlebars": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.15",
+    "slug": "^3.3.0",
+    "sweetalert2": "^9.15.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
